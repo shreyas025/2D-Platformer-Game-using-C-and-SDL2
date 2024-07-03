@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CE353F93-BF7C-4368-BE55-A8C0FAF6E793}</ProjectGuid>
+    <RootNamespace>BirchEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>E:\SDL for Visual Studio\Dev\SDL2\include;E:\SDL for Visual Studio\Dev\SDL2_image\include;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\tinyxml;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\base64;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\zlib128-dll\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\SDL for Visual Studio\Dev\SDL2\lib\x86;E:\SDL for Visual Studio\Dev\SDL2_image\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>E:\SDL for Visual Studio\Dev\SDL2\include;E:\SDL for Visual Studio\Dev\SDL2_image\include;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\tinyxml;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\base64;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\msvc2015_64\include\zlib;E:\SDL for Visual Studio\Dev\SDL2_mixer\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\SDL for Visual Studio\Dev\SDL2\lib\x64;E:\SDL for Visual Studio\Dev\SDL2_image\lib\x64;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\msvc2015_64\lib\zlib;E:\SDL for Visual Studio\Dev\SDL2_mixer\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\SDL for Visual Studio\Dev\SDL2\include;E:\SDL for Visual Studio\Dev\SDL2_image\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\SDL for Visual Studio\Dev\SDL2\lib\x86;E:\SDL for Visual Studio\Dev\SDL2_image\lib\x86;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\zlib128-dll\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\SDL for Visual Studio\Dev\SDL2\include;E:\SDL for Visual Studio\Dev\SDL2_image\include;E:\SDL for Visual Studio\Dev\SDL2_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\SDL for Visual Studio\Dev\SDL2\lib\x64;E:\SDL for Visual Studio\Dev\SDL2_image\lib\x64;E:\SDL for Visual Studio\Dev\BirchEngine - Textures\BirchEngine\msvc2015_64\lib\zlib;E:\SDL for Visual Studio\Dev\SDL2_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;zlib.lib;zlibstatic.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Dev\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Dev\BirchEngine\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Dev\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Dev\BirchEngine\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base64\base64.cpp" />
+    <ClCompile Include="Src\AnimatedGraphic.cpp" />
+    <ClCompile Include="Src\base64.cpp" />
+    <ClCompile Include="Src\Camera.cpp" />
+    <ClCompile Include="Src\CollisionManager.cpp" />
+    <ClCompile Include="Src\Enemy.cpp" />
+    <ClCompile Include="Src\Game.cpp" />
+    <ClCompile Include="Src\GameObject.cpp" />
+    <ClCompile Include="Src\GameObjectFactory.cpp" />
+    <ClCompile Include="Src\GameOverState.cpp" />
+    <ClCompile Include="Src\GameStateMachine.cpp" />
+    <ClCompile Include="Src\InputHandler.cpp" />
+    <ClCompile Include="Src\Level.cpp" />
+    <ClCompile Include="Src\LevelParser.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\MapLoader.cpp" />
+    <ClCompile Include="Src\MenuButton.cpp" />
+    <ClCompile Include="Src\MainMenuState.cpp" />
+    <ClCompile Include="Src\ObjectLayer.cpp" />
+    <ClCompile Include="Src\PauseState.cpp" />
+    <ClCompile Include="Src\PlatformerObject.cpp" />
+    <ClCompile Include="Src\Player.cpp" />
+    <ClCompile Include="Src\PlayState.cpp" />
+    <ClCompile Include="Src\ScrollingBackground.cpp" />
+    <ClCompile Include="Src\SDLGameObject.cpp" />
+    <ClCompile Include="Src\SoundManager.cpp" />
+    <ClCompile Include="Src\StateParser.cpp" />
+    <ClCompile Include="Src\TextureManager.cpp" />
+    <ClCompile Include="Src\TileLayer.cpp" />
+    <ClCompile Include="tinyxml\tinystr.cpp" />
+    <ClCompile Include="tinyxml\tinyxml.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base64\base64.h" />
+    <ClInclude Include="Src\AnimatedGraphic.h" />
+    <ClInclude Include="Src\base64.h" />
+    <ClInclude Include="Src\Callback.h" />
+    <ClInclude Include="Src\Camera.h" />
+    <ClInclude Include="Src\Collision.h" />
+    <ClInclude Include="Src\CollisionManager.h" />
+    <ClInclude Include="Src\Enemy.h" />
+    <ClInclude Include="Src\Game.h" />
+    <ClInclude Include="Src\GameObject.h" />
+    <ClInclude Include="Src\GameObjectFactory.h" />
+    <ClInclude Include="Src\GameOverState.h" />
+    <ClInclude Include="Src\GameState.h" />
+    <ClInclude Include="Src\GameStateMachine.h" />
+    <ClInclude Include="Src\InputHandler.h" />
+    <ClInclude Include="Src\Layer.h" />
+    <ClInclude Include="Src\Level.h" />
+    <ClInclude Include="Src\LevelParser.h" />
+    <ClInclude Include="Src\LoaderParams.h" />
+    <ClInclude Include="Src\MapLoader.h" />
+    <ClInclude Include="Src\MenuButton.h" />
+    <ClInclude Include="Src\MainMenuState.h" />
+    <ClInclude Include="Src\MenuState.h" />
+    <ClInclude Include="Src\ObjectLayer.h" />
+    <ClInclude Include="Src\PauseState.h" />
+    <ClInclude Include="Src\PlatformerObject.h" />
+    <ClInclude Include="Src\Player.h" />
+    <ClInclude Include="Src\PlayState.h" />
+    <ClInclude Include="Src\ScrollingBackground.h" />
+    <ClInclude Include="Src\SDLGameObject.h" />
+    <ClInclude Include="Src\Snail.h" />
+    <ClInclude Include="Src\SoundManager.h" />
+    <ClInclude Include="Src\StateParser.h" />
+    <ClInclude Include="Src\TextureManager.h" />
+    <ClInclude Include="Src\TileLayer.h" />
+    <ClInclude Include="Src\Vector2D.h" />
+    <ClInclude Include="tinyxml\tinystr.h" />
+    <ClInclude Include="tinyxml\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Src\test.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\map1.tmx" />
+    <None Include="assets\tilemap.tmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\blocks1.png" />
+    <Image Include="assets\tileset.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
